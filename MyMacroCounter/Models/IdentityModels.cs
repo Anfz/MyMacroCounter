@@ -29,5 +29,7 @@ namespace MyMacroCounter.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<MyMacroCounter.Models.MacroType> MacroTypes { get; set; }
     }
 }
