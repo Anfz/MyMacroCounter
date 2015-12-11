@@ -31,5 +31,7 @@ namespace MyMacroCounter.Models
         }
 
         public System.Data.Entity.DbSet<MyMacroCounter.Models.MacroType> MacroTypes { get; set; }
+
+        public System.Data.Entity.DbSet<MyMacroCounter.Models.MacroSubType> MacroSubTypes { get; set; }
     }
 }

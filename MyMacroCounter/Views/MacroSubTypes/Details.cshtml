@@ -1,0 +1,34 @@
+﻿@model MyMacroCounter.Models.MacroSubType
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>MacroSubType</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MacroType.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MacroType.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MacroSubTypeId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

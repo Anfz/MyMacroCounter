@@ -15,5 +15,7 @@ namespace MyMacroCounter.Models
         
         [Display(Name = "Calories Per Gram")]
         public int CaloriePerGram { get; set; }
+
+        public virtual List<MacroSubType> MacroSubTypes { get; set; }
     }
 }
